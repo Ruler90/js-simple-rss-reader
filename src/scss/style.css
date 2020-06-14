@@ -1,0 +1,84 @@
+.rss-btn {
+  display: block;
+  height: 50px;
+  width: 140px;
+  margin: 20px auto;
+  border: none;
+  border-radius: 4px;
+  background: #30bfeb;
+  font-weight: 700;
+}
+
+.rss-feed-container {
+  max-width: 1200px;
+  min-height: 80px;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px dotted #0f0f72;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.rss-feed-item {
+  display: block;
+  width: 30%;
+  margin: 10px;
+  padding: 5px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: 1px solid black;
+  border-radius: 4px;
+  -webkit-transition: -webkit-transform ease 300ms;
+  transition: -webkit-transform ease 300ms;
+  transition: transform ease 300ms;
+  transition: transform ease 300ms, -webkit-transform ease 300ms;
+  cursor: pointer;
+  text-decoration: none;
+  color: #000;
+}
+
+@media screen and (max-width: 850px) {
+  .rss-feed-item {
+    width: 45%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .rss-feed-item {
+    width: 100%;
+  }
+}
+
+.rss-feed-item:hover {
+  -webkit-transform: translateY(-10px);
+          transform: translateY(-10px);
+  color: #2d53bd;
+}
+
+.rss-feed-item .rss-title {
+  max-height: 42px;
+  overflow: hidden;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+@media screen and (max-width: 1024px) {
+  .rss-feed-item .rss-title {
+    max-height: 38px;
+    font-size: 16px;
+  }
+}
+
+.rss-feed-item .rss-img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 5px auto;
+}
+/*# sourceMappingURL=style.css.map */
